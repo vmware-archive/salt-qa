@@ -2,7 +2,6 @@ pkg:
   {% if grains['os_family'] == 'RedHat' %}
   vim: vim-enhanced
   apache: httpd
-  {% endif %}
   
   {% elif grains['os_family'] == 'Debian' %}
   vim: vim
