@@ -29,10 +29,10 @@ pkg:
 
   {% elif grains['os'] == 'FreeBSD' %}
   vim: vim 
-  apache: apache
-  mako: python2-mako
-  twisted: python2-twisted
-  openldap: openldap
+  apache: apache22
+  mako: py27-mako
+  twisted: py27-twisted
+  openldap: openldap-server
 
   {% else %}
   vim: vim
