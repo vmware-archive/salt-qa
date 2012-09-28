@@ -23,6 +23,5 @@ ldap:
     - mode: 644
     - makedirs: True
     - require:
-      - pkg: openldap-servers
-      - pkg: openldap-clients
+      - pkg: ldap
 
