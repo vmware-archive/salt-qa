@@ -1,11 +1,6 @@
-{% for usr in 'moe','larry','currly' %}
+{% for usr in pillar['users'] %}
 {{ usr }}:
   user:
     - present
 {% endfor %}
 
-{% for grp in 'foo','bar','baz' %}
-{{ grp }}:
-  group:
-    - present
-{% endfor %}
