@@ -12,6 +12,8 @@ ldap:
     - name: /etc/ldap/ldap.conf
     {% elif grains['os'] == 'Debian' %}
     - name: /etc/ldap/ldap.conf
+    {% else %}
+    - name: /etc/ldap/ldap.conf
     {% endif %}
     - source: salt://ldap/ldap.conf
     - template: jinja
