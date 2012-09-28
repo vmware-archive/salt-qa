@@ -2,7 +2,7 @@ python-pkgs:
   pkg:
     - installed
     - names:
-      - python-mako
-      - python-twisted
-      - python-twill
-      - python-typepad
+      - {{ pillar['pkg']['mako'] }}
+      - {{ pillar['pkg']['twisted'] }}
+      - {{ pillar['pkg']['twill'] }}
+      - {{ pillar['pkg']['typepad'] }}
