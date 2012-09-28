@@ -4,47 +4,41 @@ pkg:
   apache: httpd
   mako: python-mako
   twisted: python-twisted
-  twill: python-twill
-  typepad: python-typepad
+  openldap: openldap-servers
   
   {% elif grains['os_family'] == 'Debian' %}
   vim: vim
   apache: apache2
   mako: python-mako
   twisted: python-twisted
-  twill: python-twill
-  typepad: python-typepad
+  openldap: openldap-servers
 
   {% elif grains['os'] == 'Arch' %}
   vim: vim 
   apache: apache
-  mako: python-mako
-  twisted: python2-twisted
-  twill: python2-twill
-  typepad: python2-typepad
+  mako: python2-mako
+  twisted: twisted
+  openldap: openldap
 
   {% elif grains['os'] == 'Gentoo' %}
   vim: vim 
   apache: apache
   mako: python2-mako
   twisted: python2-twisted
-  twill: python2-twill
-  typepad: python2-typepad
+  openldap: openldap
 
   {% elif grains['os'] == 'FreeBSD' %}
   vim: vim 
   apache: apache
   mako: python2-mako
   twisted: python2-twisted
-  twill: python2-twill
-  typepad: python2-typepad
+  openldap: openldap
 
   {% else %}
   vim: vim
   apache: apache
   mako: python-mako
   twisted: python-twisted
-  twill: python-twill
-  typepad: python-typepad
+  openldap: openldap-servers
 
   {% endif %}

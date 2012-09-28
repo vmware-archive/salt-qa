@@ -1,9 +1,7 @@
 ldap:
   pkg:
     - installed
-    - names:
-      - openldap-servers
-      - openldap-clients
+    - name: {{ pillar['pkg']['openldap'] }}
   file:
     - managed
     {% if grains['os'] == 'RedHat' or grains['os'] == 'CentOS' %}
