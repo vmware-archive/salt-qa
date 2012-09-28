@@ -19,7 +19,6 @@ ldap:
     - context: {
       ldap_uri: "ldaps://ldap01.domain.com/ ldaps://p-chi-ldap02.domain.com/",
       ldap_base: "dc=domain,dc=com" }
-    - group: root
     - mode: 644
     - makedirs: True
     - require:
