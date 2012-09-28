@@ -1,5 +1,6 @@
 include:
   - vim
+  - emacs
   - date
   - crons
   - http
