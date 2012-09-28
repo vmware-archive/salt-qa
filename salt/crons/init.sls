@@ -21,3 +21,15 @@ lscpi > /tmp/lspcicron:
     - hour: 4
     - dayweek: 2
     - month: 7
+
+# The CentOS5 images on rackspace don't come with cron...
+
+{% if grains['os_family'] == 'RedHat' and grains['osrelease'][0] == '5' %}
+vixie-cron:
+  pkg:
+    - installed
+  service.running:
+    - name: crond
+    - enable: True
+    - order: 1
+{% endif %}
