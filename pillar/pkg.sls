@@ -3,7 +3,7 @@ pkg:
   vim: vim-enhanced
   apache: httpd
   mako: python-mako
-  twisted: python-twisted
+  twisted: python-twisted-core
   openldap: openldap-servers
   
   {% elif grains['os_family'] == 'Debian' %}
