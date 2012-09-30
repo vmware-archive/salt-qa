@@ -1,0 +1,14 @@
+git-aws-rhel62:
+  - aws-rhel62
+git-aws-rhel58:
+  - aws-rhel58
+git-aws-fedora16:
+  - aws-fedora16
+git-aws-fedora17:
+  - aws-fedora17
+git-aws-freebsd9:
+  - aws-freebsd9
+git-aws-ubuntu:
+  - aws-ubuntu
+arch_rsgit:
+  - rs-arch
