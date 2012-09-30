@@ -12,3 +12,7 @@ git-aws-ubuntu:
   - aws-ubuntu
 arch_rsgit:
   - rs-arch
+cent6_rsgit:
+  - rs-cent6
+cent_rsgit:
+  - rs-cent5
