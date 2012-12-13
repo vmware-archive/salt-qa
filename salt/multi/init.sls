@@ -2,7 +2,7 @@
 random_pkgs:
   pkg.installed:
     - pkgs:
-      - {{ pillar['bison'] }}
-      - {{ pillar['gnupg'] }}
-      - {{ pillar['ed'] }}
+      - {{ pillar['pkg']['bison'] }}
+      - {{ pillar['pkg']['gnupg'] }}
+      - {{ pillar['pkg']['ed'] }}
 
