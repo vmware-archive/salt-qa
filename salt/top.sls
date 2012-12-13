@@ -12,6 +12,7 @@ base:
     - files
     - ldap
     - files.ext-files-second
+    - multi
   'os:CentOS':
     - match: grain
     - redhat
