@@ -1,3 +1,4 @@
 include:
   - pkg
   - users
+  - bool

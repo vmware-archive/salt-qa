@@ -1,5 +1,3 @@
 base:
   '*':
-    - users
-    - pkg
-    - bool
+    - core
